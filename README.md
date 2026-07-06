@@ -2,9 +2,11 @@
 
 Analysis of 26,583 salary survey records exploring compensation trends  across industry, gender, ethnicity, education, experience, and geography  using SQL (BigQuery) and Google Sheets.
 
+
 ## Overview
 
 This project analyzes self-reported compensation data across industry, experience, education, gender, ethnicity, job title, and geography to identify patterns in pay and compensation equity. Data was cleaned and standardized in Google Sheets, queried in BigQuery using SQL, and visualized through pivot tables and charts.
+
 
 ## Data Cleaning
 
@@ -16,6 +18,7 @@ This project analyzes self-reported compensation data across industry, experienc
 - Lowered minimum threshold to 5 for country level analysis to maintain geographic representation
 - Re-uploaded as TSV after discovering embedded commas in text fields were breaking CSV parsing in BigQuery
 
+
 ## Key Findings
 
 - **Industry pay gap:** Approximately $300,000 spread between the highest and lowest paying industries
@@ -25,6 +28,8 @@ This project analyzes self-reported compensation data across industry, experienc
 - **Ethnicity and gender:** Middle Eastern respondents showed the largest gender pay gap while Native American respondents showed the smallest pay gap
 - **Job titles:** Physician was the highest paying title at $229,250 average — all top 15 titles exceeded $160,000
 - **Geography:** California had the highest average state salary at $114,610 while Georgia reported the lowest among top 15 states at $85,739
+- ** Non-binary respondents reported the lowest average salary at $81,842 — below both male and female averages — suggesting compounding compensation disadvantages for non-binary identifying professionals
+
 
 ## Limitations
 
@@ -35,5 +40,6 @@ This project analyzes self-reported compensation data across industry, experienc
 
 
 ## Dashboard Preview
+
 ![Dashboard Top](Salary_analysis_dashboard.png)
 ![Dashboard Bottom](salary_analysis_dashboard2.png)
